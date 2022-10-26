@@ -5,9 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-function Slider() {
+function Slider(props) {
   return (
-    <div className="slider__inner">
+    <div className={`slider__wrap ${props.fonts}`}>
       <Swiper
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         navigation={true}
